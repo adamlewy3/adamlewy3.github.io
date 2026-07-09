@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Adam Lewandowski</title>
+    <link rel="stylesheet" href="../../main.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script type="text/javascript" src="../../darkmode.js" defer></script>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: { '[+]': [['$', '$']] }
+            }
+        };
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+    
+    <div class="big-container">
+   <!--Header-->
+    <header class="header">
+            <nav class="navbar">
+                <ul class="sidebar">
+                    <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li><a href="../../blog.html" style="font-size: 2.0rem;">Blog</a></li>
+                    <li><a href="../../writings.html" style="font-size: 2.0rem;">Writings</a></li> 
+                </ul>
+                <ul class="topbar">
+                    <li><a href="../../index.html"">Adam Lewandowski</a></li>
+                    <li class="hideOnMobile"><a href="../../blog.html">Blog</a></li>
+                    <li class="hideOnMobile"><a href="../../writings.html">Writings</a></li>
+                    <li><button id="theme-switch">
+                        <i class="ri-sun-line sun-icon"></i>
+                        <i class="ri-moon-line moon-icon"></i>
+                    </button></li>
+                    <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                </ul>
+            </nav>
+    </header>
+    <hr>
+
+        <div class="title">
+            <span>A Review of Jacobson's Basic Algebra 1.</span>
+        </div>
+
+        <div class="container-blog">
+            <div class="box2">
+                <p>
+                    This is a wonderful book in its own way. It assumes nothing and builds up to great heights, even
+                    dedicating time to mathematical induction and proving results such as the fundamental theorem of
+                    arithmetic in chapter 0. Though you would be mistaken for thinking that it is unsophisticated, in
+                    fact it is the complete opposite. In chapter 0, a few pages after telling the reader what a set is,
+                    it proves that recursively defined functions on $\mathbb{N}$ exist and are unique. This was a shock
+                    to my system and many hours were spent browsing MathStackExchange looking for an explanation of the proof. This
+                    pattern continues throughout the book. 
+                </p>
+            </div>
+            <br>
+
+            <div class="box2">
+                <p>
+                    We move somewhat quickly from very basic notions to
+                    significantly more advanced ones without taking time to stop and admire the view. For instance, we
+                    prove the Sylow theorems in an unorthodox way, the standard proof being given as a series of
+                    exercises. Or, partway through our discussion of monoids, we prove Cayley's theorem.
+                </p>
+            </div>
+            <br>
+
+            <div class="box2">
+                <p>
+                                        The exercises in these book are absolutely fantastic. They range from insightful to mindblowing. A
+                    particular highlight for me was showing that primes congruent to 1 modulo 4 are always the sum
+                    of two squares. In fact, I can probably trace my love of algebraic number theory back to doing this
+                    very exercise. There is not a single boring exercise in this book.
+                </p>
+            </div>
+            <br>
+
+            <div class="box2">
+                <p>
+                                        As the exercises aren't boring, it also means that the reader is expected to do the work in
+                    understanding the material. They are expected to come up with their own examples, do their own
+                    computations and experiment with the material. Jacobson is treating the reader as an adult, and
+                    offering the dessert of interesting exercises knowing that the reader has already eaten their
+                    computational vegetables. If you don't, however, this book is destined to do you more harm than
+                    good. I suspect that this is what happened to me at one point, I simply moved through the material
+                    too quickly, wasting months of reading time.
+                </p>
+            </div>
+            <br>
+
+            <div class="box2">
+                <p>
+                                        A quick note should also be made about the exposition. Jacobson's affinity for algebra is evident -
+                    his explanations are lucid and clear. However, it can be old school at times. It was first published
+                    in 1974, however Jacobson received his PhD under Joseph Wedderburn (the same one as in the
+                    Artin-Wedderburn theorem!) in 1934. As a result, there is an old-school tinge, and there are some
+                    things mentioned that I haven't seen elsewhere. For example, the exponent of a group is used to
+                    prove that finite subgroups of the multiplicative group of a field are cyclic. (As far as I understand,
+                    this proof is somewhat nonstandard, and we typically use the structure theorem.)
+                </p>
+            </div>
+            <br>
+
+
+            <div class="box2">
+                <p>
+                    Overall, Basic Algebra I is spectacular but requires a significant amount of mathematical maturity
+                    and some mathematical backgroud. It is at minimum readable after having finishing Algebra II at
+                    Warwick, but I would wait a little longer to make sure one gets the most out of it.
+                </p>
+            </div>
+            <br>
+
+
+            <div class="subtitle">
+                References
+            </div>
+
+            <div class="box2" style="padding-left: 1.6rem;">
+                <ul style="font-size: 2.0rem;">
+                    <li>Jacobson, N. <i>Basic Algebra 1</i> 2nd. ed., Dover Publications, 2009.</li>
+                </ul>
+            </div>
+        </div>
+
+
+    <footer>
+        <hr>
+    </footer>
+    
+
+    </div>
+
+
+   <script>
+    function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+    }
+
+    function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+    }
+
+    function toLight(){
+
+    }
+   </script>
+</body>
+</html>

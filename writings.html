@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Writings | Adam Lewandowski</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script type="text/javascript" src="darkmode.js" defer></script>
+</head>
+
+<body>
+    
+    <div class="big-container">
+   <!--Header-->
+    <header class="header">
+            <nav class="navbar">
+                <ul class="sidebar">
+                    <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li><a href="blog.html" style="font-size: 2.0rem;">Blog</a></li>
+                    <li><a href="#" style="font-size: 2.0rem;">Writings</a></li> 
+                </ul>
+                <ul class="topbar">
+                    <li><a href="index.html"">Adam Lewandowski</a></li>
+                    <li class="hideOnMobile"><a href="blog.html">Blog</a></li>
+                    <li class="hideOnMobile"><a href="#">Writings</a></li>
+                    <li><button id="theme-switch">
+                        <i class="ri-sun-line sun-icon"></i>
+                        <i class="ri-moon-line moon-icon"></i>
+                    </button></li>
+                    <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                </ul>
+            </nav>
+    </header>
+    <hr>
+
+        <div class="title">
+            <span">Writings</span>
+        </div>
+
+        <div class="container">
+            <div class="box2" style="margin: initial;">
+                <ul class="accordion-writings">
+                    <li>
+                        <p><a href="assets/writings/ideals_loc.pdf">Ideals and Localisation.</a> (3pg, pdf)</p>
+                    </li>
+                    <li>
+                        <p><a href="assets/writings/char_sums_in_numthy.pdf">Character Sums in Number Theory.</a> (23pg, pdf)</p>
+                    </li>
+                    <li>
+                        <p><a href="assets/writings/ma265_revision_notes.pdf">MA265 Revision Notes.</a> (10pg, pdf)</p>
+                    </li>
+                    <li>
+                        <p><a href="assets/writings/intro_to_svms.pdf">An Introduction to SVM's.</a> (11pg, pdf)</p>
+                    </li>
+                    <li>
+                        <p><a href="assets/writings/the_p_norm.pdf">The p-Norm.</a> (3pg, pdf)</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <footer>
+            <hr>
+        </footer>
+
+    </div>
+   <script>
+    function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+    }
+
+    function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+    }
+
+    function toLight(){
+
+    }
+   </script>
+</body>
+</html>
